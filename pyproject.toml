@@ -17,6 +17,10 @@ torchvision = { version = "^0.20.0", source = "pypi" }
 pre-commit = "^4.0.1"
 pyright = "^1.1.389"
 
+[tool.poetry.scripts]
+export = "onnx_tutorial.export_to_onnx:export_to_onnx"
+export_check = "onnx_tutorial.export_to_onnx:export_to_onnx_check"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
