@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "pytorch-onnx-tutorial"
+name = "onnx-tutorial"
 version = "0.1.0"
-description = "Export a PyTorch model to ONNX format"
+description = "ONNX tutorial based on PyTorch & HuggingFace"
 authors = ["Wooyeol Lee <wooyeol0519@snu.ac.kr>"]
 readme = "README.md"
 packages = [ { include = "onnx_tutorial" } ]
@@ -19,9 +19,9 @@ pre-commit = "^4.0.1"
 pyright = "^1.1.389"
 
 [tool.poetry.scripts]
-export = "onnx_tutorial.export_to_onnx:export_to_onnx"
-export_check = "onnx_tutorial.export_to_onnx:export_to_onnx_check"
-execute = "onnx_tutorial.execute_with_ort:execute_with_ort"
+export = "onnx_tutorial.onnx_pytorch.export_to_onnx:export_to_onnx"
+export_check = "onnx_tutorial.onnx_pytorch.export_to_onnx:export_to_onnx_check"
+execute = "onnx_tutorial.onnx_pytorch.execute_with_ort:execute_with_ort"
 
 [build-system]
 requires = ["poetry-core"]

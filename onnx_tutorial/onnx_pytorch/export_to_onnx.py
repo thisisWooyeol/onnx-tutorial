@@ -3,7 +3,7 @@ import torch
 
 from .model import MyModel
 
-ONNX_MODEL_PATH = "./onnx_tutorial/my_image_classifier.onnx"
+ONNX_MODEL_PATH = "onnx_models/my_image_classifier.onnx"
 
 # After "*.onnx" file is created, you can visualize it using Netron.
 # You can run Netron directly from the browser: https://netron.app/

@@ -4,7 +4,7 @@ import torch
 
 from .model import MyModel
 
-ONNX_MODEL_PATH = "./onnx_tutorial/my_image_classifier.onnx"
+ONNX_MODEL_PATH = "onnx_models/my_image_classifier.onnx"
 
 
 def execute_with_ort():
